@@ -1,24 +1,31 @@
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
+# Machine Learning Mini Project
 
-# Sample dataset
-data = {
-    "Hours_Studied": [1, 2, 3, 4, 5],
-    "Marks": [40, 50, 60, 70, 80]
-}
+## Description
+This is a beginner-level machine learning project created to understand
+the complete machine learning workflow, from data preparation to model
+training and prediction.
 
-df = pd.DataFrame(data)
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
 
-X = df[["Hours_Studied"]]
-y = df["Marks"]
+## Model Used
+- Linear Regression
 
-X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.2, random_state=42
-)
+## Project Workflow
+- Load and prepare dataset
+- Split data into training and testing sets
+- Train the machine learning model
+- Make predictions on new data
 
-model = LinearRegression()
-model.fit(X_train, y_train)
+## Learning Outcome
+- Understood basic machine learning concepts
+- Learned how models are trained and evaluated
+- Gained experience with Scikit-learn library
 
-prediction = model.predict([[6]])
-print("Predicted Marks for 6 hours study:", prediction[0])
+## How to Run
+1. Install Python
+2. Install required libraries (pandas, numpy, scikit-learn)
+3. Run the Python file:
